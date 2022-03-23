@@ -1,3 +1,4 @@
+import json
 # Задание 1. Создать программно файл в текстовом формате, записать в него построчно данные,
 # вводимые пользователем. Об окончании ввода данных свидетельствует пустая строка.
 
@@ -153,9 +154,15 @@ with open("file_for_z7.txt") as my_file:
         firms.append({name: profit})
         if profit > 0:
             middle_profit = middle_profit + profit
-    print(firms)
+
     counter = len(firms)
     middle_profit = middle_profit / counter
     firms.append({'average_profit': int(middle_profit)})
     print(firms)
+
+with open("file_for_z7.json", "w") as write_f:
+    json.dump(firms, write_f)
+
+
+
 

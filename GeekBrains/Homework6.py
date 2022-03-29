@@ -44,7 +44,7 @@ class Road:
     def mass_calculation(self):
         mass_sqr_m = float(input("Введите массу в кг дорожного полотна площадью 1 кв.м и толщиной 1 см >>>"))
         thickness = float(input("Введите толщину дорожного полотна в см >>>"))
-        mass = self._width * self._length * mass_sqr_m * thickness
+        mass = self._width * self._length * mass_sqr_m * thickness / 1000
         print(f"Масса дорожного полотна составляет {mass} тонн")
 
 

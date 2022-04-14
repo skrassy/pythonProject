@@ -184,13 +184,13 @@ class ComplexNumber:
         self.b = b
 
     def __add__(self, other):
-        return f'Сумма чисел complex1 и complex2: {self.a + other.a} + {self.b + other.b} * i'
+        return f'Сумма чисел complex1 и complex2: {self.a + other.a} + {self.b + other.b}i'
 
     def __mul__(self, other):
-        return f'Произведение чисел complex1 и complex2: {self.a * other.a - (self.b * other.b)} + {self.b * other.a} * i'
+        return f'Произведение чисел complex1 и complex2: {self.a * other.a - (self.b * other.b)} + {self.b * other.a}i'
 
     def __str__(self):
-        return f'Комплексное число: {self.a} + {self.b} * i'
+        return f'Комплексное число: {self.a} + {self.b}i'
 
 
 complex1 = ComplexNumber(5, 4)
